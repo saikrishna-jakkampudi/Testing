@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Demo.master.cs" Inherits="Testing.Demo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 51%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td>Numerator</td>
+                    <td>
+                        <asp:TextBox ID="txtNumerator" runat="server"></asp:TextBox> </td>
+                   
+                </tr>
+                <tr>
+                    <td>Denominator</td>
+                    <td><asp:TextBox ID="txtDenominator" runat="server"></asp:TextBox></td>
+                 
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td><asp:TextBox ID="txtResult" runat="server"></asp:TextBox></td>
+              
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="btCalculate" runat="server" Text="Button" />  </td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
